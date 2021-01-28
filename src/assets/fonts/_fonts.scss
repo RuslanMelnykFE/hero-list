@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'HelveticaNeueCyr Regular';
+	src: url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Roman.eot');
+	src: local('HelveticaNeueCyr-Roman'),
+		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Roman.woff') format('woff'),
+		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr Lite';
+	src: url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Light.eot');
+	src: local('HelveticaNeueCyr-Light'),
+		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Light.woff') format('woff'),
+		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local('GT Walsheim Pro Light'), local('GT-Walsheim-Pro-Light'),
+      url('~@/assets/fonts/GTWalsheimPro/GTWalsheimPro-Light.woff2') format('woff2'),
+      url('~@/assets/fonts/GTWalsheimPro/GTWalsheimPro-Light.woff') format('woff'),
+      url('~@/assets/fonts/GTWalsheimPro/GTWalsheimPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
