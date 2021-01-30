@@ -1,0 +1,66 @@
+//==============================
+//        Variables
+//==============================
+$burger__bg:   $black;
+
+//==============================
+//        Nav
+//==============================
+.nav {
+  &__logo {
+    margin-left: -10px;
+  }
+}
+
+//==============================
+//        Menu
+//==============================
+.menu {
+  &_desc {
+    display: none;
+    & .menu__item:not(:first-child) {
+      margin-left: 33px;
+    }
+
+    & .menu__item:nth-child(2) {
+      margin-left: 44px;
+    }
+  }
+  
+  &__burger {
+    position: relative;
+    width: 40px;
+    height: 26px;
+    margin-left: 30px;
+    margin-right: -8px;
+    padding: 8px;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 24px;
+      height: 1.3px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $burger__bg;
+    }
+
+    &::before {
+      top: 8px;
+    }
+
+    &::after {
+      bottom: 8px;
+    }
+  }
+
+  @media screen and (min-width: $md) {
+    &_desc {
+      display: flex;
+    }
+    &_mob {
+      display: none;
+    }
+  }
+}

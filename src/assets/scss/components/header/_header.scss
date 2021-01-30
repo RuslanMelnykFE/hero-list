@@ -1,0 +1,20 @@
+//==============================
+//        Variables
+//==============================
+$header__bg: $bg_color;
+
+//==============================
+//        Header
+//==============================
+.header {
+  padding: 7px 0;
+
+  &__langs {
+    position: relative;
+  }
+
+  @media screen and (min-width: $md) {
+    padding: 15px 0 17px;
+    background-color: $header__bg;
+  }
+}

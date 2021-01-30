@@ -1,17 +1,21 @@
+//==============================
+//        Fonts
+//==============================
 @import '../fonts/fonts';
 
+//==============================
+//        Utils
+//==============================
+@import 'utils/modules';
 
-h1 {
-  font-family: 'HelveticaNeueCyr Regular';  
-  font-size: 32px;
-  font-weight: normal;
-}
 
-h2 {
-  font-family: 'HelveticaNeueCyr Lite';  
-  font-weight: 300;
-}
+//==============================
+//        Base
+//==============================
+@import 'base/modules';
 
-h3 {
-  font-family: 'GT Walsheim Pro';  
-}
+
+//==============================
+//        Components
+//==============================
+@import 'components/modules';

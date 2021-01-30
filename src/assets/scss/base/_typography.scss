@@ -1,0 +1,82 @@
+//==============================
+//        Variables
+//==============================
+$ff__text_default:      $ff__Helvetica;
+$ff__text_light:        $ff_Walsheim;
+
+$fs__h1:                28px;
+$fs__h2:                24px;
+$fs__default:           14px;
+
+$lh__h1:                120%;
+$lh__h2:                148%;
+$lh__default:           104%;
+$lh__bold:              180%;
+
+$color__text_default:   $black;
+$color__text_light:     $black_08;
+$color__text_ultra:     $black_1;
+$color__text_white:     $white;
+
+//==============================
+//        Mixins
+//==============================
+@mixin typo-text($f-size, $lh, $color) {
+  font-size: $f-size;
+  line-height: $lh;
+  color: $color;
+}
+
+//==============================
+//        Custom styles
+//==============================
+h1,
+h2,
+p,
+button,
+a {
+  font-family: $ff__text_default;
+  font-weight: normal;
+}
+
+input,
+.dropdown {
+  font-family: $ff__text_default;
+  font-weight: 100;
+  @include typo-text($fs__default, $lh__bold, $color__text_default);
+}
+
+h1 {
+  @include typo-text($fs__h1, $lh__h1, $color__text_default);
+}
+
+h2 {
+  @include typo-text($fs__h2, $lh__h2, $color__text_default);
+}
+
+p,
+button {
+  @include typo-text($fs__default, $lh__default, $color__text_light);
+}
+
+a {
+  @include typo-text($fs__default, $lh__default, $color__text_default);
+}
+
+.text {
+  &_white {
+    color: $color__text_white;
+  }
+  &_light {
+    font-family: $ff__text_light;
+    font-weight: 300;
+    @include typo-text($fs__default, $lh__bold, $color__text_ultra);
+  }
+}
+
+@media screen and (min-width: $lg) {
+  h1 {
+    font-size: 32px;
+    line-height: $fs__h2;
+  }
+}

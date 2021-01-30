@@ -1,0 +1,55 @@
+//==============================
+//        Variables
+//==============================
+$btn__bg_arrow: $black;
+
+//==============================
+//        Btn
+//==============================
+
+.btn {
+  padding: 8px;
+  @include transition(all, .3s, ease-in-out, 0s);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &_drop {
+    position: relative;
+    padding: 8px 23px 8px 8px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 6px;
+      height: 1.5px;
+      border-radius: 15px;
+      background-color: $btn__bg_arrow;
+      opacity: .8;
+      @include transition(all, .3s, ease-in-out, 0s);
+    }
+
+    &::before {
+      right: 11.2px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      right: 8px;
+      transform: rotate(-45deg);
+    }
+
+    &.active {
+      &::before {
+        transform: rotate(-45deg);
+      }
+  
+      &::after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

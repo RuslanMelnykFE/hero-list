@@ -1,5 +1,8 @@
 @font-face {
-	font-family: 'HelveticaNeueCyr Regular';
+  font-family: 'HelveticaNeueCyr';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 	src: url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Roman.eot');
 	src: local('HelveticaNeueCyr-Roman'),
 		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
@@ -10,22 +13,36 @@
 }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr Lite';
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 	src: url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Light.eot');
 	src: local('HelveticaNeueCyr-Light'),
 		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
 		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Light.woff') format('woff'),
 		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+	src: url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Thin.eot');
+	src: local('HelveticaNeueCyr-Roman'),
+		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Thin.woff') format('woff'),
+		url('~@/assets/fonts/HelveticaNueCur/HelveticaNeueCyr-Thin.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'GT Walsheim Pro';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
   src: local('GT Walsheim Pro Light'), local('GT-Walsheim-Pro-Light'),
       url('~@/assets/fonts/GTWalsheimPro/GTWalsheimPro-Light.woff2') format('woff2'),
       url('~@/assets/fonts/GTWalsheimPro/GTWalsheimPro-Light.woff') format('woff'),
       url('~@/assets/fonts/GTWalsheimPro/GTWalsheimPro-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
 }

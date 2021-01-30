@@ -1,0 +1,57 @@
+//==============================
+//        Variables
+//==============================
+$link__bg_orange:   $orange;
+$link__color_white: $white;
+$link__ff_light:    $ff_Walsheim;
+$link__lh_lang:     180%;
+
+//==============================
+//        Link
+//==============================
+.link {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  @include transition(all, .3s, ease-in-out, 0s);
+
+  & img {
+    display: block;
+  }
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &_orange {
+    background-color: $link__bg_orange;
+    color: $link__color_white;
+    border-radius: 6px;
+  }
+
+  &_sign-up {
+    min-width: 162px;
+    padding: 15px;
+    font-family: $link__ff_light;
+  }
+
+  &_lang {
+    display: block;
+    padding: 4px 8px;
+    line-height: $link__lh_lang;
+    border-radius: 6px;
+  }
+
+  &_social {
+    & img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media screen and (min-width: $md) {
+    &_social {
+      padding: 12px;
+    }
+  }
+}

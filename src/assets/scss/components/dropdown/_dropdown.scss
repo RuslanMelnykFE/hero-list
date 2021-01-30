@@ -1,0 +1,44 @@
+//==============================
+//        Variables
+//==============================
+$dropdown__bg:   $white;
+$dropdown_shadow: $black_04;
+
+//==============================
+//        Dropdown
+//==============================
+.dropdown {
+  position: absolute;
+  min-width: 101px;
+  padding: 16px 20px;
+  background-color: $dropdown__bg;
+  box-shadow: 0 0 32px $dropdown_shadow;
+  border-radius: 6px;
+  transform: translate(-50%, -100%) scaleY(0);
+  opacity: 0;
+  @include transition(all, .3s, linear, 0s);
+
+  &.show {
+    transform: translate(-50%, 0) scaleY(1);
+    opacity: 1;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-bottom: 6px solid $dropdown__bg;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform: translate(-50%, -100%);
+  }
+
+  &_langs{
+    min-width: auto;
+    padding: 0 8px;
+    top: calc(100% + 6px);
+    left: 50%;
+  }
+}

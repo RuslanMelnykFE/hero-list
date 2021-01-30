@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1232px;
+  width: 100%;
+  margin: auto;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
