@@ -1,11 +1,13 @@
 <template>
   <main>
-    <section class="peeple">
-      <div class="people__action">
-        <h1>People</h1>
-      </div>
-      <div class="people__cards">
-        People crads
+    <section class="people">
+      <div class="container people__container">
+        <div class="people__action">
+          <h1>People</h1>
+        </div>
+        <div class="people__cards">
+          People crads
+        </div>
       </div>
     </section>
   </main>
