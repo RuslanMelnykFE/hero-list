@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:RuslanMelnykFE/RuslanMelnykFE.github.io.git master
 
 # если вы публикуете по адресу https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:RuslanMelnykFE/hero-list.git prod:gh-pages
+git push -f git@github.com:RuslanMelnykFE/hero-list.git master:gh-pages
 
 cd -
